@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="dark.js" defer></script>
+    <title>Portafolio</title>
+  </head>
+  <body>
+    <header id="encabezado" class="encabezado">
+      <div class="contenedor">
+        <div class="info-encabezado">
+          <p>Samuel Díaz</p>
+          <p>Software Developer</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#proyectos">PROYECTOS</a>
+        <a id="contacto" href="#contacto">CONTACTO</a>
+        <a  href="imagnes/CV-Samuel-Díaz-Software-Developer.pdf" download="CV-Samuel-Díaz-Software-Developer">CURRÍCULUM</a>
+      </nav>
+      <button class="modo-oscuro" id="dark-button" aria-label="Cambiar modo oscuro" >
+      <i id="icono-oscuro" class="fa-solid fa-moon" ></i>
+      <i class="fa-solid fa-sun" id="icono-claro" style="display: none; color: #ffff;"></i>
+    </button>
+    </header>
+    <dialog id="targeta-contacto" class="contacto"> <H1>CONTACTO</H1>
+      <div class="contenedor-contacto">
+        <div id="salida" class="salida">x</div>
+        <div class="logos">
+      <i class="fa-solid fa-envelope" aria-hidden="true" style="color: black;"></i>
+      <a href="mailto:samueldiazdeveloper@gmail.com?subject=Consulta%20desde%20tu%20portafolio">samueldiazdeveloper@gmail.com</a>
+      </div>
+      <div class="logos">
+      <i class="fa-solid fa-phone" aria-hidden="true" style="color: black;"></i>
+       <a 
+        href="https://wa.me/584164166814" 
+        aria-label="Enviar mensaje por WhatsApp a Samuel Díaz"
+        target="_blank" 
+      >+58 416 4166814</a>
+      </div>
+        
+      </div>
+    </dialog>
+    <main>
+      <section class="introduccion">
+        <div class="contenedor-introduccion">
+          <h1 class="titulo-principal">
+            Software
+            <span class="animacion-developer" id="animaciones">Developer</span
+            ><br />
+            Samuel Díaz
+          </h1>
+          <div class="enlaces">
+            <a target="_blank" href="https://github.com/samueldavid-developer">GitHub</a>
+            <a target="_blank" href="https://www.linkedin.com/in/samuel-diaz-717881370/">LinkedIn</a>
+          </div>
+          <div class="habilidades">
+            <i class="fab fa-html5" aria-hidden="true" title="HTML5"></i>
+            <i class="fab fa-css3-alt" aria-hidden="true" title="CSS3"></i>
+            <i class="fab fa-square-js" aria-hidden="true" title="JavaScript"></i>
+            <i class="fab fa-python" aria-hidden="true" title="Python"></i>
+            <i class="fab fa-react" aria-hidden="true" title="React"></i>
+            <i class="fab fa-node-js" aria-hidden="true" title="Node.js"></i>
+            <i class="fab fa-php" aria-hidden="true" title="PHP"></i>
+          </div>
+        </div>
+      </section>
+
+      <section id="sobre_mi" class="sobre-mi">
+        <h1>SOBRE MÍ</h1>
+        <div class="descripcion">
+          <div class="contenedor-foto-de-perfil">
+            <img src="imagnes/fotodeperfil.jpeg" alt="Foto de perfil profesional de Samuel Díaz" />
+          </div>
+          <div class="sobre-mi-texto">
+            <p>
+              Soy un desarrollador con tres años de experiencia. Me apasiona la
+              tecnología y la creación de soluciones funcionales y creativas a
+              través del código. Me especializo en tecnologías como HTML, CSS,
+              JavaScript, React, Node.js, PHP y Python.
+            </p>
+            <p>
+              Considero una persona entusiasta, autodidacta y siempre en
+              búsqueda de mejorar mis habilidades. Disfruto colaborar en
+              proyectos en equipo. Mi objetivo es seguir creciendo
+              profesionalmente y aportar valor a los proyectos en los que
+              participo, tanto en el desarrollo frontend como backend.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="proyectos" id="proyectos">
+        <h1>PROYECTOS</h1>
+        <div class="contenedor-proyectos">
+          <div class="proyecto1">
+            <div class="contenedor-img">
+              <a href="https://github.com/samueldavid-developer/netflix-clone" target="_blank">
+              <img
+                src="imagnes/Captura de pantalla de 2026-01-07 01-57-04.png"
+                alt="Captura del proyecto Reproductor de música"
+                class="imagen-proyecto"
+              />
+              </a>
+            </div>
+            <div class="descripcion-proyecto">
+              <h2>Clon de Netflix</h2>
+              <p>
+                Netflix Clone Aplicación interactiva desarrollada con React 19 y TypeScript. 
+                Implementa consumo de la API de TMDB para búsqueda de películas en 
+                tiempo real e integración de reproductor de trailers con YouTube.
+              </p>
+            </div>
+          </div>
+          <div class="proyecto1">
+            
+            <div class="contenedor-img">
+              <a href="https://github.com/samueldavid-developer/repoductor-python" target="_blank">
+              <img
+                src="imagnes/repro.png"
+                alt="Captura del segundo proyecto"
+                class="imagen-proyecto"
+              />
+              </a>
+            </div>
+            <div class="descripcion-proyecto">
+              <h2>Reproductor</h2>
+              <p>
+                Reproductor es una aplicación de música que permite a los
+                usuarios escuchar sus canciones favoritas en línea. Ofrece una
+                interfaz intuitiva y fácil de usar, con opciones para crear
+                listas de reproducción personalizadas y explorar nuevas
+                canciones.
+              </p>
+            </div>
+          </div>
+          <div class="proyecto1">
+            <div class="contenedor-img">
+              <a href="https://github.com/samueldavid-developer/precio-dolar" target="_blank">
+              <img
+                src="imagnes/Captura de pantalla de 2025-10-01 12-00-22.png"
+                alt="Captura del tercer proyecto"
+                class="imagen-proyecto"
+                
+              />
+              </a>
+            </div>
+            <div class="descripcion-proyecto">
+              <h2>Calculadora</h2>
+              <p>calculadora de conversión de moneda que permite a los usuarios convertir una 
+                cantidad de dólares estadounidenses a bolívares venezolanos. 
+                Este proyecto está diseñado para ser una herramienta 
+                práctica que ofrece una conversión actualizada y precisa.
+
+              </p>
+              
+            </div>
+          </div>
+          <div class="proyecto1">
+            <div class="contenedor-img">
+              <a href="https://github.com/samueldavid-developer/chat-ia" target="_blank">
+              <img
+                src="imagnes/Captura de pantalla de 2026-01-07 04-57-43.png"
+                alt="Captura del tercer proyecto"
+                class="imagen-proyecto"
+                
+              />
+              </a>
+            </div>
+            <div class="descripcion-proyecto">
+              <h2>Chat ia</h2>
+              <p>FiruBot AI es un asistente para el análisis de documentos. Herramienta interactiva desarrollada para la lectura y 
+                análisis de archivos PDF y Word mediante inteligencia artificial. 
+                Permite a los usuarios conversar con sus documentos en tiempo real, facilitando la 
+                extracción de información clave y el resumen de textos extensos de manera instantánea.
+
+              </p>
+              
+            </div>
+          </div>
+          <div class="proyecto1">
+            <div class="contenedor-img">
+              <a href="https://github.com/samueldavid-developer/chat-ia" target="_blank">
+              <img
+                src="imagnes/Captura de pantalla de 2026-01-07 06-55-15.png"
+                alt="Captura del tercer proyecto"
+                class="imagen-proyecto"
+                
+              />
+              </a>
+            </div>
+            <div class="descripcion-proyecto">
+              <h2>Bitcoin Live </h2>
+              <p>Bitcoin Live es una aplicación de monitoreo de criptomonedas enfocada en la velocidad de respuesta y la 
+                precisión visual. El objetivo principal fue crear una herramienta técnica que presente 
+                datos críticos de mercado sin las distracciones ni la saturación de las plataformas
+                convencionales.
+
+              </p>
+              
+            </div>
+          </div>
+          
+        </div>
+      </section>
+      <section class="skills">
+        <h1>TECNOLOGÍAS</h1>
+        <div class="contenedor-skills">
+          
+            <div class="demostracion-skills">
+              <h2>Frontend</h2>
+              <div class="contenido-skills">
+                <div class="logo-con-texto">
+                  <img class="logos-skills" src="imagnes/icons8-css3-96.png" alt="Logo CSS3">
+                  <p>CSS</p>
+                </div>
+                <div class="logo-con-texto">
+                  <img class="logos-skills" src="imagnes/icons8-html-5-96.png" alt="Logo HTML5">
+                  <p>HTML</p>
+                </div>
+                <div class="logo-con-texto">
+                  <img class="logos-skills" src="imagnes/icons8-javascript-96.png" alt="Logo JavaScript">
+                  <p>JavaScript</p>
+                </div>
+                <div class="logo-con-texto">
+                  <img class="logos-skills" src="imagnes/icons8-reaccionar-40.png" alt="Logo React">
+                  <p>React</p>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="demostracion-skills">
+              <h2>Backend</h2>
+              <div class="contenido-skills">
+                <div class="logo-con-texto">
+                  <img class="logos-skills" src="imagnes/icons8-nodo-js-48.png" alt="Logo Node.js">
+                  <p>Node.js</p>
+                </div>
+                <div class="logo-con-texto">
+                  <img class="logos-skills" src="imagnes/icons8-php-100.png" alt="Logo PHP">
+                  <p>PHP</p>
+                </div>
+                <div class="logo-con-texto">
+                  <img class="logos-skills" src="imagnes/icons8-python-96.png" alt="Logo Python">
+                  <p>Python</p>
+                </div>
+              </div>
+            </div>
+            <div class="demostracion-skills">
+              <h2>Tecnologías</h2>
+              <div class="contenido-skills">
+                <div class="logo-con-texto">
+                  <img class="logos-skills" src="imagnes/icons8-git-96.png" alt="Logo Git">
+                  <p>Git</p>
+                </div>
+                <div class="logo-con-texto">
+                  <img class="logos-skills" src="imagnes/icons8-github-100.png" alt="Logo GitHub">
+                  <p>GitHub</p>
+                </div>
+                <div class="logo-con-texto">
+                  <img class="logos-skills" src="imagnes/icons8-visual-studio-code-2019-96.png" alt="Logo Visual Studio Code">
+                  <p>VS Code</p>
+                </div>
+                <div class="logo-con-texto">
+                  <img class="logos-skills" src="imagnes/icons8-wordpress-96.png" alt="Logo WordPress">
+                  <p>WordPress</p>
+                </div>
+              </div>
+            </div>
+          
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
