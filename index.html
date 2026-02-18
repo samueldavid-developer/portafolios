@@ -24,17 +24,17 @@
       </div>
       <nav>
         <a href="#proyectos">PROYECTOS</a>
-        <a id="contacto" href="#contacto">CONTACTO</a>
-        <a  href="imagnes/CV-Samuel-Díaz-Software-Developer.pdf" download="CV-Samuel-Díaz-Software-Developer">CURRÍCULUM</a>
+        <button id="contacto" class="link-button" aria-haspopup="dialog" aria-controls="targeta-contacto">CONTACTO</button>
+        <a href="imagnes/CV-Samuel-Díaz-Software-Developer.pdf" download="CV-Samuel-Díaz-Software-Developer">CURRÍCULUM</a>
       </nav>
       <button class="modo-oscuro" id="dark-button" aria-label="Cambiar modo oscuro" >
       <i id="icono-oscuro" class="fa-solid fa-moon" ></i>
       <i class="fa-solid fa-sun" id="icono-claro" style="display: none; color: #ffff;"></i>
     </button>
     </header>
-    <dialog id="targeta-contacto" class="contacto"> <H1>CONTACTO</H1>
+    <dialog id="targeta-contacto" class="contacto"> <h1>CONTACTO</h1>
       <div class="contenedor-contacto">
-        <div id="salida" class="salida">x</div>
+          <div id="salida" class="salida" role="button" aria-label="Cerrar">×</div>
         <div class="logos">
       <i class="fa-solid fa-envelope" aria-hidden="true" style="color: black;"></i>
       <a href="mailto:samueldiazdeveloper@gmail.com?subject=Consulta%20desde%20tu%20portafolio">samueldiazdeveloper@gmail.com</a>
